@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CTA Button</title>
+    <style>
+      body {
+        height: 100vh;
+        padding: 0;
+      }
+
+      .cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #21468b;
+        color: white;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        text-decoration: none;
+        box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.25);
+        border: 3px solid white;
+        border-left: none;
+        writing-mode: vertical-rl;
+        padding: 1.5rem 0.5rem 1.5rem 0.3rem;
+        border-radius: 0.75rem;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        position: absolute;
+        left: 0px;
+        bottom: 20px;
+      }
+
+      /* Desktop (>= 640px) */
+      @media (min-width: 640px) {
+        .cta {
+          border: 3px solid white;
+          writing-mode: horizontal-tb;
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          padding: 0 0;
+          left: 10px;
+          bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" class="cta">お問い合わせ</a>
+  </body>
+</html>
